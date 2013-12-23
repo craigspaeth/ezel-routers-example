@@ -1,0 +1,8 @@
+h1 See commits for Artsy repos using the GitHub API!
+input.search-input( placeholder='Try "flux" or "garner" for starters, and hit then enter.' )
+ul#commits-list
+  for commit in commits
+    li
+      a(
+        href='commit/' + commit.collection.owner + '/' + commit.collection.repo + '/' + commit.get('sha') 
+      )= commit.get('commit').message
