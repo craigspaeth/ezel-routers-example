@@ -21,6 +21,8 @@ $(document).on('click', 'a', function(e) {
   // Add a little fade-in-fade-out action to clarify it's on the client
   $('body').animate({ opacity: 0 }, 'fast', function() {
     Backbone.history.navigate(href, { trigger: true });
-    $('body').animate({ opacity: 1 }, 'fast');
+    setTimeout(function() {
+      $('body').animate({ opacity: 1 }, 'fast');
+    }, 200);
   });
 });
