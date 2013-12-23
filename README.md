@@ -19,6 +19,6 @@ In the layout's `client.js` file we are instantiating each app's client-side Bac
 This example is more of a conversation starter. There are some known caveats that may want to be addressed in this solution including:
 
 * Duplicated route declarations and fetching code between server/client
-* Setup/Teardown of long-lived Backbone views
+* Setup/teardown of long-lived Backbone views
 * Having a component require into apps seems like an antipattern
-* In more complex apps treating the body as the main region that gets re-rendered won't always fly.
+* In more complex apps treating the body as the main region that gets re-rendered won't always fly
